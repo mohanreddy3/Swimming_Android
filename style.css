@@ -1,0 +1,170 @@
+.main{
+    border: 3px solid black;
+    height: 400px;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* background: rgb(138, 147, 148 ); */
+    background-color: rgba(6, 6, 6, 0.6);
+}
+.main:hover{
+    background-image: url(./img2.avif);
+    /* background: no-repeat; */
+}
+
+
+.face{
+    background: chartreuse;
+    height: 120px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px; 
+}
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+   
+}
+
+.main:hover .eyes{
+    transform: rotate(180deg);
+    transition: transform 1s ease;
+    /* transform: rotateX(180deg) rotateY(180deg); */
+}
+
+
+.leye,.reye{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: black;
+}
+
+
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+
+.larm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.main:hover .larm{
+    /* transform: rotate(90deg); */
+    /* transform: rotateX(170deg) rotateY(180deg);*/
+    animation: rotateAnimation 15ms linear infinite;
+}
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+.torso{
+    height: 150px;
+    width: 150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+    /* cursor: pointer; */
+    
+}
+.main:hover .torso{
+    animation: rotateAnimation 2ms linear infinite;
+    border-radius: 0% 0% 20% 20%;
+}
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+.rarm{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: transform 1.2s ease;
+}
+.main:hover .rarm{
+    /* transform: rotate(90deg); */
+    /* transform: rotateX(170deg) rotateY(180deg); */
+    animation: rotateAnimation 15ms linear infinite;
+}
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: auto;
+    margin-top: -20px;  
+    transition: transform 1.2s ease;
+}
+.main:hover .legs{
+    /* transform: rotateX(170deg) rotateY(180deg); */
+    animation: rotateAnimation1 15ms linear infinite;
+}
+@keyframes rotateAnimation1 {
+    from {
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+
+
+.lleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+
+
+.rleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+}
+body{
+    background-image: url(./img2.avif);
+}
+h1{ color: white;
+
+}
